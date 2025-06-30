@@ -1,0 +1,23 @@
+/* Estilos personalizados */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Asegura contraste para navbar activo */
+.nav-link.active {
+    font-weight: bold;
+    color: #f8f9fa !important;
+}
+
+/* Título principal responsivo */
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* Imagen destacada en el header */
+header img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}

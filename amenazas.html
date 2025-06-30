@@ -1,48 +1,82 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amenazas Comunes</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amenazas Comunes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Navegación -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="amenazas.html">Amenazas Comunes</a></li>
-            <li><a href="consejos.html">Consejos de Seguridad</a></li>
-        </ul>
-    </nav>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Ciberseguridad</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navLinks">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navLinks">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link active" href="amenazas.html">Amenazas</a></li>
+        <li class="nav-item"><a class="nav-link" href="consejos.html">Consejos</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-    <main>
-        <h1>Amenazas Cibernéticas Comunes</h1>
-        <section>
-            <h2>Phishing</h2>
-            <p>Engaño para robar información personal mediante correos falsos.</p>
-        </section>
+<!-- CONTENIDO PRINCIPAL -->
+<main class="container my-5">
+  <h1 class="mb-4">Amenazas Cibernéticas Comunes</h1>
 
-        <section>
-            <h2>Ransomware</h2>
-            <p>Secuestra tu información y pide un rescate.</p>
-        </section>
+  <!-- Fila de tarjetas -->
+  <div class="row">
 
-        <section>
-            <h2>Malware</h2>
-            <p>Software malicioso que daña o accede a tus sistemas.</p>
-        </section>
+    <div class="col-md-6 col-lg-4 mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Phishing</h5>
+          <p class="card-text">Engaño que simula mensajes legítimos para obtener datos confidenciales como contraseñas y tarjetas.</p>
+        </div>
+      </div>
+    </div>
 
-        <section>
-            <h2>Ataques DDoS</h2>
-            <p>Colapsan un sitio web mediante múltiples accesos simultáneos.</p>
-        </section>
-    </main>
+    <div class="col-md-6 col-lg-4 mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Ransomware</h5>
+          <p class="card-text">Secuestra los archivos de una persona u organización y exige dinero para liberarlos.</p>
+        </div>
+      </div>
+    </div>
 
-    <footer>
-        <p>&copy; 2025 Sitio Informativo sobre Ciberseguridad</p>
-    </footer>
+    <div class="col-md-6 col-lg-4 mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Malware</h5>
+          <p class="card-text">Programa malicioso que se instala sin tu consentimiento y daña o roba información.</p>
+        </div>
+      </div>
+    </div>
 
+    <div class="col-md-6 col-lg-4 mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">DDoS</h5>
+          <p class="card-text">Ataque masivo que colapsa un sitio web con múltiples solicitudes simultáneas.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center py-3">
+  <p class="mb-0">&copy; 2025 Sitio Informativo sobre Ciberseguridad</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
